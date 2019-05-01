@@ -3,7 +3,7 @@ const AWS = require('aws-sdk');
 const config = require('../config');
 const logger = require('../logger');
 
- module.exports = () => {
+module.exports = () => {
   AWS.config.update({
     accessKeyId: config('AWS_ACCESS_KEY_ID'),
     secretAccessKey: config('AWS_SECRET_KEY'),
